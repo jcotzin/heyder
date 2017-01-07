@@ -11,7 +11,7 @@ body, html {
 }
 
 :root {
-  --base: #F78F9F;
+  --base: #96849E;
   --spacing: 10px;
   --blur: 0px;
 }
@@ -26,12 +26,11 @@ img {
   background-image: url('');
   background-size: cover;
   background-position: center;
-  height: 310px;
-  width: 240px;
+  height: 300px;
+  width: 200px;
   border: 1px solid #bbb;
   position: absolute;
   padding: var(--spacing);
-  background: var(--base);
   filter: blur(var(--blur));
 }
 
@@ -55,4 +54,9 @@ img {
   z-index: 2;
   margin-top: 40%;
   font-size: 14px;
+}
+
+img {
+  background: var(--base);
+
 }
