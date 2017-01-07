@@ -1,0 +1,30 @@
+html {
+  background: url(http://sdeerwallpaper.com/Cool-Wallpapers/anime-scenery-wallpaper-desktop-background-Is-Cool-Wallpapers.jpg) bottom center;
+  background-size: cover;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  flex: 1;
+  display: flex;
+  min-height: 100vh;
+}
+
+img {
+  height: 500px;
+  width: auto;
+  margin: 50px auto;
+}
+
+#image {
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 200px;
+  border: 1px solid #bbb;
+  margin: 50px auto;
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>hey der!</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="controls">
+
+    </div>
+
+    <div class="top">
+      <img src="frame.png">
+    </div>
+
+    <input type="file" id="getval" />
+    <div id="image"></div>
+
+
+  </body>
+</html>
+
+<script>
+document.getElementById('getval').addEventListener('change', readURL, true);
+function readURL(){
+    var file = document.getElementById("getval").files[0];
+    var reader = new FileReader();
+    reader.onloadend = function(){
+        document.getElementById('image').style.backgroundImage = "url(" + reader.result + ")";
+    }
+    if(file){
+        reader.readAsDataURL(file);
+    }else{
+    }
+}
+
+</script>
