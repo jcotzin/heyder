@@ -7,15 +7,22 @@
   </head>
   <body>
     <div class="controls">
+      <label for="spacing">Spacing:</label>
+      <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
 
+      <label for="blur">Blur:</label>
+      <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+      <label for="base">Base Color</label>
+      <input type="color" id="base" name="base" value="#F78F9F">
     </div>
 
     <div class="top">
       <img src="frame.png">
+      <input type="file" id="getval" />
+      <div id="image"></div>
     </div>
 
-    <input type="file" id="getval" />
-    <div id="image"></div>
 
 
   </body>

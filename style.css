@@ -6,25 +6,53 @@ html {
 body, html {
   margin: 0;
   padding: 0;
-  align-items: center;
-  flex: 1;
-  display: flex;
-  min-height: 100vh;
+  text-align: center;
+  color: white;
+}
+
+:root {
+  --base: #F78F9F;
+  --spacing: 10px;
+  --blur: 0px;
 }
 
 img {
   height: 500px;
   width: auto;
-  margin: 50px auto;
+  position: absolute;
 }
 
 #image {
   background-image: url('');
   background-size: cover;
   background-position: center;
-  height: 300px;
-  width: 200px;
+  height: 310px;
+  width: 240px;
   border: 1px solid #bbb;
-  margin: 50px auto;
+  position: absolute;
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
 
+.controls {
+  position: relative;
+  margin-top: 50px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  min-height:100vh;
+  z-index: 1;
+  margin-top: -2%;
+}
+
+#getval {
+  margin-left: 8%;
+  z-index: 2;
+  margin-top: 40%;
+  font-size: 14px;
 }
